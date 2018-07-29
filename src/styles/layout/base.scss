@@ -1,0 +1,37 @@
+body {
+  height: 100%;
+}
+
+.wrapper {
+  @include gradient("neon-passion");
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+
+  &--home {
+    text-align: center;
+  }
+
+  &--dev {
+    @include gradient("burning-sky");
+  }
+
+  &--design {
+    @include gradient("lagoon");
+  }
+
+  &--shoot {
+    @include gradient("rainforest");
+  }
+
+  &--paint {
+    @include gradient("sunflower");
+  }
+}
+
+.container {
+  margin: 0 auto 2em;
+  max-width: 45em;
+  padding: 0 1em;
+  width: 100%;
+}

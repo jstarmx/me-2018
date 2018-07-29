@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+  <head>
+    <%- include('../partials/head.ejs', { title: 'dev', bg: '#db510a' }) %>
+  </head>
+  <body>
+    <div class="wrapper wrapper--dev">
+      <%- include('../partials/header.ejs', { menu }) %>
+      <div class="container">
+        <p>I'm a front end developer with 10+ years of industry experience, both agency and in-house, based in Manchester. My bag is writing readable, reusable and tested HTML, CSS and Javascript that serves up highly usable and accessible user interfaces.</p>
+        <p>Having spent a good number of years working as a designer who codes, I have a strong eye for visuals and UX that works for users. Now that I'm a full-time coder I can apply that background with a strong technical grounding, and I'm constantly striving to learn, improve my skill set and keep up-to-date with the latest developments in the industry.</p>
+        <p>I'm a firm believer that ability, enthusiasm and ethos are more important than knowledge of particular technologies. Nonetheless, it can admittedly still be important, so here are some of my favourites to use at work and at home:</p>
+        <ul class="tech">
+          <li class="tech__item">
+            <img class="tech__icon" src="/react.svg" alt="">
+            React
+          </li>
+          <li class="tech__item">
+            <img class="tech__icon" src="/jest.svg" alt="">
+            Jest
+          </li>
+          <li class="tech__item">
+            <img class="tech__icon" src="/webpack.svg" alt="">
+            Webpack
+          </li>
+          <li class="tech__item">
+            <img class="tech__icon" src="/nodejs.svg" alt="">
+            Node.js
+          </li>
+          <li class="tech__item">
+            <img class="tech__icon" src="/yarn.svg" alt="">
+            Yarn
+          </li>
+          <li class="tech__item">
+            <img class="tech__icon" src="/git.svg" alt="">
+            Git
+          </li>
+          <li class="tech__item">
+            <img class="tech__icon" src="/html5.svg" alt="">
+            HTML5
+          </li>
+          <li class="tech__item">
+            <img class="tech__icon" src="/sass.svg" alt="">
+            Sass
+          </li>
+          <li class="tech__item">
+            <img class="tech__icon" src="/ruby.svg" alt="">
+            Ruby
+          </li>
+        </ul>
+      </div>
+      <footer class="footer footer--wide">
+        <% include ../partials/social.ejs %>
+      </footer>
+    </div>
+  </body>
+</html>

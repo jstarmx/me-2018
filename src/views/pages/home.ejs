@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <%- include('../partials/head.ejs', { title: 'home', bg: '#d4224f' }) %>
+  </head>
+  <body>
+    <div class="wrapper wrapper--home">
+      <header class="header">
+        <img class="logo logo--home" src="/logo2.svg" alt="">
+        <h1>james starkie</h1>
+        <p class="header__intro">
+          front end dev / filmmaker / creative
+          <br>
+          manchester / uk
+        </p>
+        <%- menu %>
+      </header>
+      <footer class="footer">
+        <%- include('../partials/social.ejs') %>
+      </footer>
+    </div>
+  </body>
+</html>

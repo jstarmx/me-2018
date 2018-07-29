@@ -1,0 +1,50 @@
+/* stylelint-disable color-no-hex  */
+
+$white: #fff;
+$pink: #d4224f;
+$purple: #91186b;
+
+$breakpoints: (
+  s: 30,
+  m: 40,
+  l: 50,
+  xl: 60,
+  xxl: 70
+);
+
+@function color($palette, $key) {
+  @return map-get(map-get($palettes, $palette), $key);
+}
+
+$neon-passion: (
+  "light": #d4224f,
+  "dark": #91186b
+);
+
+$burning-sky: (
+  "light": #db510a,
+  "dark": #a40b0b
+);
+
+$rainforest: (
+  "light": #b3da48,
+  "dark": #388827
+);
+
+$lagoon: (
+  "light": #1aa0d1,
+  "dark": #284e98
+);
+
+$sunflower: (
+  "light": #efc440,
+  "dark": #f78c1c
+);
+
+$palettes: (
+  "neon-passion": $neon-passion,
+  "burning-sky": $burning-sky,
+  "rainforest": $rainforest,
+  "lagoon": $lagoon,
+  "sunflower": $sunflower
+);

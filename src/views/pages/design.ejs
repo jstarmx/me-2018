@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <%- include('../partials/head.ejs', { title: 'design', bg: '#1aa0d1' }) %>
+  </head>
+  <body class="snap">
+    <div class="wrapper wrapper--design">
+      <%- include('../partials/header.ejs') %>
+      <div id="design"><%- gallery %></div>
+      <footer class="footer footer--wide">
+        <%- include('../partials/social.ejs') %>
+      </footer>
+      <div id="lightbox"></div>
+    </div>
+    <script type="text/javascript" src="/manifest.js"></script>
+    <script type="text/javascript" src="/vendor.js"></script>
+    <script type="text/javascript" src="/design.js"></script>
+  </body>
+</html>

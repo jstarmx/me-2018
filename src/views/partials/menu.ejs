@@ -1,0 +1,7 @@
+<ul class="menu <%= modifier %>">
+  <% ['dev', 'design'].map(page => %>
+    <li class="menu__item">
+      <a class="menu__link" href="/<%= page %>"><%= page %></a>
+    </li>
+  <% ) %>
+</ul>

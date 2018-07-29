@@ -1,0 +1,61 @@
+.menu {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.4em;
+  letter-spacing: 0.1em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &--horizontal {
+    flex-direction: row;
+    font-size: 1.2em;
+    justify-content: space-between;
+
+    @include max-width(m) {
+      font-size: 1em;
+      letter-spacing: 0;
+    }
+  }
+
+  &__link {
+    color: $white;
+    display: block;
+    margin: 0 0.25em;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+
+    &:hover {
+      background-color: rgba($white, 0.2);
+    }
+
+    &--active,
+    &--active:hover {
+      background-color: $white;
+      cursor: default;
+      font-weight: 300;
+
+      .wrapper--dev & {
+        color: color("burning-sky", "dark");
+      }
+
+      .wrapper--design & {
+        color: color("lagoon", "dark");
+      }
+
+      .wrapper--shoot & {
+        color: color("rainforest", "dark");
+      }
+
+      .wrapper--paint & {
+        color: color("sunflower", "dark");
+      }
+    }
+
+    &:hover,
+    &--active {
+      border-radius: 0.1em;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.lightbox {
+  &__overlay {
+    border: 0;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+
+    .wrapper--design & {
+      background-color: rgba(color("lagoon", "light"), 0.9);
+    }
+
+    .wrapper--paint & {
+      background-color: rgba(color("sunflower", "light"), 0.9);
+    }
+  }
+
+  &__image {
+    border: 0.5em solid $white;
+    bottom: 0;
+    box-shadow: 0 0.2em 0.2em 0.1em rgba(0, 0, 0, 0.15);
+    display: block;
+    left: 0;
+    margin: auto;
+    max-height: 90%;
+    max-width: 90%;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  &__x {
+    cursor: pointer;
+    opacity: 0.75;
+    position: absolute;
+    right: 0.5em;
+    top: 0.5em;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

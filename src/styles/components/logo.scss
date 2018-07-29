@@ -1,0 +1,12 @@
+.logo {
+  height: 5em;
+
+  @include max-width(m) {
+    margin-bottom: 1em;
+  }
+
+  &--home {
+    height: 7em;
+    margin: 1em 0;
+  }
+}

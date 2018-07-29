@@ -1,0 +1,31 @@
+.header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1em 0;
+  width: 100%;
+
+  &--wide {
+    border-bottom: 1px solid rgba($white, 0.25);
+
+    @include min-width(m) {
+      flex-direction: row;
+      margin-bottom: 3em;
+      padding: 1em 2em;
+    }
+  }
+
+  &__home-link {
+    display: flex;
+    transition: transform 100ms linear;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__intro {
+    opacity: 0.75;
+  }
+}
