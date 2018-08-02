@@ -1,0 +1,12 @@
+{
+  "plugins": ["prettier"],
+  "extends": ["eslint-config-airbnb-base", "prettier"],
+  "env": {
+    "node": true,
+    "jest": true,
+    "es6": true
+  },
+  "rules": {
+    "prettier/prettier": 2
+  }
+}

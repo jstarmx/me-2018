@@ -5,5 +5,41 @@
   "main": "index.js",
   "repository": "git@github.com:jstarmx/me-2018.git",
   "author": "jstarmx <jstar.mx@gmail.com>",
-  "license": "GNU General Public License v3.0"
+  "license": "GPL-3.0",
+  "scripts": {
+    "lint": "npx eslint ./ && npx stylelint ./src/styles/**/*.scss",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "npx eslint ./ --fix",
+      "git add"
+    ],
+    "*.scss": [
+      "npx stylelint ./src/styles/**/*.scss --fix",
+      "git add"
+    ],
+    "*.{json,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "eslint": "^5.2.0",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-prettier": "^2.6.2",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.2.0",
+    "node-sass": "^4.9.2",
+    "node-sass-glob-importer": "^5.2.0",
+    "parcel": "^1.9.7",
+    "prettier": "^1.14.0",
+    "stylelint": "^9.4.0",
+    "stylelint-config-prettier": "^3.3.0",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-order": "^0.8.1"
+  }
 }

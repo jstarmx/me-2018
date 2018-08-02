@@ -3,17 +3,13 @@
   <head>
     <%- include('../partials/head.ejs', { title: 'paint', bg: '#efc440' }) %>
   </head>
-  <body class="snap">
+  <body>
     <div class="wrapper wrapper--paint">
       <%- include('../partials/header.ejs') %>
-      <div id="paint"><%- gallery %></div>
+      <div id="paint"></div>
       <footer class="footer footer--wide">
         <%- include('../partials/social.ejs') %>
       </footer>
-      <div id="lightbox"></div>
     </div>
-    <script type="text/javascript" src="/manifest.js"></script>
-    <script type="text/javascript" src="/vendor.js"></script>
-    <script type="text/javascript" src="/paint.js"></script>
   </body>
 </html>
