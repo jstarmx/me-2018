@@ -25,6 +25,9 @@
       "git add"
     ]
   },
+  "jest": {
+    "testURL": "http://localhost/"
+  },
   "dependencies": {
     "autoprefixer": "^9.1.0",
     "copy-webpack-plugin": "^4.5.2",
@@ -50,5 +53,11 @@
     "stylelint-order": "^0.8.1",
     "webpack": "^4.16.4",
     "webpack-cli": "^3.1.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.4.2",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^23.4.2"
   }
 }
