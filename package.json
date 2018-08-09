@@ -8,7 +8,8 @@
   "license": "GPL-3.0",
   "scripts": {
     "lint": "npx eslint ./ && npx stylelint ./src/styles/**/*.scss",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "build": "rm -rf ./dist && npx webpack --mode development --watch"
   },
   "lint-staged": {
     "*.js": [
@@ -25,21 +26,29 @@
     ]
   },
   "dependencies": {
+    "autoprefixer": "^9.1.0",
+    "copy-webpack-plugin": "^4.5.2",
+    "css-loader": "^1.0.0",
     "ejs": "^2.6.1",
     "eslint": "^5.2.0",
     "eslint-config-airbnb-base": "^13.0.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-prettier": "^2.6.2",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "husky": "^0.14.3",
+    "import-glob-loader": "^1.1.0",
     "lint-staged": "^7.2.0",
     "node-sass": "^4.9.2",
-    "node-sass-glob-importer": "^5.2.0",
-    "parcel": "^1.9.7",
+    "postcss-loader": "^2.1.6",
     "prettier": "^1.14.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.21.0",
     "stylelint": "^9.4.0",
     "stylelint-config-prettier": "^3.3.0",
     "stylelint-config-standard": "^18.2.0",
-    "stylelint-order": "^0.8.1"
+    "stylelint-order": "^0.8.1",
+    "webpack": "^4.16.4",
+    "webpack-cli": "^3.1.0"
   }
 }
