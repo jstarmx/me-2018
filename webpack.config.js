@@ -2,11 +2,15 @@ const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
+const EJSBuilderPlugin = require('./lib/ejs-builder');
+
 module.exports = {
   entry: './src/styles/app.scss',
   output: {
     path: path.resolve(__dirname, 'dist'),
+    publicPath: '/dist/',
   },
+  mode: 'development',
   module: {
     rules: [
       {
@@ -24,9 +28,10 @@ module.exports = {
     ],
   },
   plugins: [
+    new EJSBuilderPlugin(),
     new ExtractTextPlugin('./styles/app.css'),
     new CopyWebpackPlugin([
-      { from: './src/images', to: path.resolve(__dirname, 'dist/images') },
+      { from: './src/images', to: path.resolve(__dirname, 'dist', 'images') },
     ]),
   ],
 };

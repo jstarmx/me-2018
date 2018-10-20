@@ -7,17 +7,17 @@
   "author": "jstarmx <jstar.mx@gmail.com>",
   "license": "GPL-3.0",
   "scripts": {
-    "lint": "npx eslint ./ && npx stylelint ./src/styles/**/*.scss",
+    "lint": "./node_modules/.bin/eslint ./ && ./node_modules/.bin/stylelint ./src/styles/**/*.scss",
     "precommit": "lint-staged",
-    "build": "rm -rf ./dist && npx webpack --mode development --watch"
+    "build": "rm -rf ./dist && ./node_modules/.bin/webpack --mode development --watch"
   },
   "lint-staged": {
     "*.js": [
-      "npx eslint ./ --fix",
+      "./node_modules/.bin/eslint ./ --fix",
       "git add"
     ],
     "*.scss": [
-      "npx stylelint ./src/styles/**/*.scss --fix",
+      "./node_modules/.bin/stylelint ./src/styles/**/*.scss --fix",
       "git add"
     ],
     "*.{json,md}": [
@@ -45,6 +45,7 @@
     "node-sass": "^4.9.2",
     "postcss-loader": "^2.1.6",
     "prettier": "^1.14.0",
+    "pretty": "^2.0.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.21.0",
     "stylelint": "^9.4.0",
@@ -58,6 +59,7 @@
     "babel-core": "^6.26.3",
     "babel-jest": "^23.4.2",
     "babel-preset-env": "^1.7.0",
-    "jest": "^23.4.2"
+    "jest": "^23.4.2",
+    "webpack-serve": "^2.0.2"
   }
 }
