@@ -6,7 +6,44 @@
   <body>
     <div class="wrapper wrapper--paint">
       <%- include('../partials/header.ejs') %>
-      <div id="paint"></div>
+      <div id="paint">
+        <main class="gallery">
+          <section class="gallery__section">
+            <ul class="gallery__images">
+              <li class="thumb" style="background-image:url('/images/galleries/paint/mother.jpg');">
+                <a class="thumb__link" href="/images/galleries/paint/mother.jpg" rel="noopener noreferrer" target="_blank">
+                  <span class="thumb__title">Mother</span>
+                </a>
+              </li>
+              <li class="thumb" style="background-image:url('/images/galleries/paint/robot.jpg');">
+                <a class="thumb__link" href="/images/galleries/paint/robot.jpg" rel="noopener noreferrer" target="_blank">
+                  <span class="thumb__title">Robot in a Cemetery of Wrecks</span>
+                </a>
+              </li>
+              <li class="thumb" style="background-image:url('/images/galleries/paint/ld1.jpg');"">
+                <a class="thumb__link" href="/images/galleries/paint/ld1.jpg" rel="noopener noreferrer" target="_blank"">
+                  <span class="thumb__title"">Life &amp; Decay 1</span>
+                </a>
+              </li>
+              <li class="thumb" style="background-image:url('/images/galleries/paint/ld2.jpg');"">
+                <a class="thumb__link" href="/images/galleries/paint/ld2.jpg" rel="noopener noreferrer" target="_blank"">
+                  <span class="thumb__title"">Life &amp; Decay 2</span>
+                </a>
+              </li>
+              <li class="thumb" style="background-image:url('/images/galleries/paint/ld3.jpg');"">
+                <a class="thumb__link" href="/images/galleries/paint/ld3.jpg" rel="noopener noreferrer" target="_blank"">
+                  <span class="thumb__title"">Life &amp; Decay 3</span>
+                </a>
+              </li>
+              <li class="thumb" style="background-image:url('/images/galleries/paint/ld4.jpg');"">
+                <a class="thumb__link" href="/images/galleries/paint/ld4.jpg" rel="noopener noreferrer" target="_blank"">
+                  <span class="thumb__title"">Life &amp; Decay 4</span>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </main>
+      </div>
       <footer class="footer footer--wide">
         <%- include('../partials/social.ejs') %>
       </footer>
