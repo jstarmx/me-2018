@@ -1,4 +1,22 @@
 @mixin gradient($palette) {
-  background: color($palette, "dark");
-  background: linear-gradient(120deg, color($palette, "light"), color($palette, "dark"));
+  background: color($palette, 'dark');
+  background: linear-gradient(
+    120deg,
+    color($palette, 'light'),
+    color($palette, 'dark')
+  );
+  animation: grad-keyframes 15s ease infinite;
+  background-size: 300%;
+}
+
+@keyframes grad-keyframes {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
