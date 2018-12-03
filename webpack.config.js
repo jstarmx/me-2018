@@ -32,6 +32,7 @@ module.exports = {
     new ExtractTextPlugin('./styles/app.css'),
     new CopyWebpackPlugin([
       { from: './src/images', to: path.resolve(__dirname, 'dist', 'images') },
+      { from: './src/_redirects', to: path.resolve(__dirname, 'dist') },
     ]),
   ],
 };
