@@ -31,8 +31,9 @@ module.exports = {
     new EJSBuilderPlugin(),
     new ExtractTextPlugin('./styles/app.css'),
     new CopyWebpackPlugin([
-      { from: './src/images', to: path.resolve(__dirname, 'dist', 'images') },
+      { from: './src/images', to: path.resolve(__dirname, 'dist/images') },
       { from: './src/_redirects', to: path.resolve(__dirname, 'dist') },
+      { from: './src/scripts', to: path.resolve(__dirname, 'dist/scripts') },
     ]),
   ],
 };
