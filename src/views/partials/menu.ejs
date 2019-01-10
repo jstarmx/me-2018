@@ -1,14 +1,22 @@
 <ul class="menu menu--horizontal">
   <li class="menu__item">
-    <a class="menu__link" href="/dev">dev</a>
+    <a class="menu__link <%= active === 'dev' ? 'menu__link--active' : '' %>" href="/dev">
+      dev
+    </a>
   </li>
   <li class="menu__item">
-    <a class="menu__link" href="/design">design</a>
+    <a class="menu__link <%= active === 'design' ? 'menu__link--active' : '' %>" href="/design">
+      design
+    </a>
   </li>
   <li class="menu__item">
-    <a class="menu__link" href="/shoot">shoot</a>
+    <a class="menu__link <%= active === 'shoot' ? 'menu__link--active' : '' %>" href="/shoot">
+      shoot
+    </a>
   </li>
   <li class="menu__item">
-    <a class="menu__link" href="/paint">paint</a>
+    <a class="menu__link <%= active === 'paint' ? 'menu__link--active' : '' %>" href="/paint">
+      paint
+    </a>
   </li>
 </ul>
