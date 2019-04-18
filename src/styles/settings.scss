@@ -9,7 +9,7 @@ $breakpoints: (
   m: 40,
   l: 50,
   xl: 60,
-  xxl: 70
+  xxl: 70,
 );
 
 @function color($palette, $key) {
@@ -18,27 +18,27 @@ $breakpoints: (
 
 $neon-passion: (
   "light": #d4224f,
-  "dark": #91186b
+  "dark": #91186b,
 );
 
 $burning-sky: (
   "light": #db510a,
-  "dark": #a40b0b
+  "dark": #a40b0b,
 );
 
 $rainforest: (
   "light": #b3da48,
-  "dark": #388827
+  "dark": #388827,
 );
 
 $lagoon: (
   "light": #1aa0d1,
-  "dark": #284e98
+  "dark": #284e98,
 );
 
 $sunflower: (
   "light": #efc440,
-  "dark": #f78c1c
+  "dark": #f78c1c,
 );
 
 $palettes: (
@@ -46,5 +46,5 @@ $palettes: (
   "burning-sky": $burning-sky,
   "rainforest": $rainforest,
   "lagoon": $lagoon,
-  "sunflower": $sunflower
+  "sunflower": $sunflower,
 );
