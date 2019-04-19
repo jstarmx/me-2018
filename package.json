@@ -10,7 +10,8 @@
     "start": "./node_modules/.bin/webpack-serve --content ./dist",
     "lint": "./node_modules/.bin/eslint ./ && ./node_modules/.bin/stylelint ./src/styles/**/*.scss",
     "precommit": "lint-staged",
-    "build": "rm -rf ./dist && ./node_modules/.bin/webpack --mode development --watch",
+    "build": "rm -rf ./dist && ./node_modules/.bin/webpack --mode development",
+    "build:watch": "npm run build -- --watch",
     "dist": "./node_modules/.bin/webpack --mode production"
   },
   "lint-staged": {
@@ -31,7 +32,9 @@
     "testURL": "http://localhost/"
   },
   "dependencies": {
+    "@babel/polyfill": "^7.4.3",
     "autoprefixer": "^9.1.0",
+    "babel-loader": "^8.0.5",
     "copy-webpack-plugin": "^4.5.2",
     "css-loader": "^1.0.0",
     "ejs": "^2.6.1",

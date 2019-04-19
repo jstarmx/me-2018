@@ -6,7 +6,7 @@ const Lightbox = (function Lightbox() {
 
   return {
     init() {
-      document.querySelectorAll('.thumb__link').forEach(thumb => {
+      Array.from(document.querySelectorAll('.thumb__link')).forEach(thumb => {
         thumb.addEventListener('click', event => {
           event.preventDefault();
           const path = event.target.getAttribute('href');
