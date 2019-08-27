@@ -12,7 +12,8 @@
     "precommit": "lint-staged",
     "build": "rm -rf ./dist && ./node_modules/.bin/webpack --mode development",
     "build:watch": "npm run build -- --watch",
-    "dist": "./node_modules/.bin/webpack --mode production"
+    "dist": "./node_modules/.bin/webpack --mode production",
+    "test": "npm run lint"
   },
   "lint-staged": {
     "*.js": [
