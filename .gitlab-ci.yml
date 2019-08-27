@@ -1,0 +1,11 @@
+image: node:12-alpine
+
+stages:
+  - test
+
+test:
+  stage: test
+  script:
+    - npm i npm@latest -g
+    - npm i
+    - npm test
