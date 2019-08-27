@@ -11,9 +11,9 @@
     "lint": "./node_modules/.bin/eslint ./ && ./node_modules/.bin/stylelint ./src/styles/**/*.scss",
     "precommit": "lint-staged",
     "build": "rm -rf ./dist && ./node_modules/.bin/webpack --mode development",
-    "build:watch": "npm run build -- --watch",
+    "build:watch": "yarn build -- --watch",
     "dist": "./node_modules/.bin/webpack --mode production",
-    "test": "npm run lint"
+    "test": "yarn lint"
   },
   "lint-staged": {
     "*.js": [
