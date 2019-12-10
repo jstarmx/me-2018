@@ -15,6 +15,9 @@ module.exports = {
     publicPath: '/dist/',
   },
   mode: 'development',
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+  },
   module: {
     rules: [
       {
